@@ -1,6 +1,6 @@
 # Preamble demo (MathJax Plus)
 
-These use macros defined in `preamble.sty` (loaded by the plugin at startup). If
+These use macros defined in `preamble.sty` (reloaded automatically on edits). If
 the plugin is working, they expand; otherwise they'd show as red undefined names.
 
 - `\bs` (boldsymbol): $\bs k + \bs v$

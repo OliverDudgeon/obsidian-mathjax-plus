@@ -8,15 +8,16 @@
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"strictNullChecks": true,
-		"lib": ["DOM", "ES2020"],
+		"lib": ["DOM", "ES2022"],
 		"skipLibCheck": true,
 		"isolatedModules": true
 	},
 	"include": [
 		"main.ts",
 		"font-registry.ts",
+		"native-mathjax.ts",
+		"settings.ts",
 		"fonts/**/*.ts",
-		"tex-extensions.ts",
 		"woff2.d.ts"
 	]
 }

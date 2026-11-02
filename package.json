@@ -1,10 +1,14 @@
 {
 	"name": "obsidian-mathjax-plus",
-	"version": "0.1.0",
-	"description": "Modern MathJax (v4) for Obsidian: line breaking, better fonts, and custom preamble macros.",
+	"version": "0.2.0",
+	"description": "Fonts, equation layout, and shared LaTeX preambles for Obsidian’s native MathJax renderer.",
 	"private": true,
 	"packageManager": "pnpm@11.2.2",
 	"scripts": {
+		"check": "tsc --noEmit && pnpm test && pnpm build",
+		"test": "node --test tests/*.test.mjs",
+		"typecheck": "tsc --noEmit",
+		"generate:fonts": "node scripts/gen-fonts.mjs",
 		"build": "node esbuild.config.mjs",
 		"dev": "node esbuild.config.mjs --watch"
 	},
@@ -12,18 +16,19 @@
 	"author": "oliver",
 	"license": "MIT",
 	"devDependencies": {
+		"@mathjax/mathjax-tex-font": "4.1.3",
+		"@mathjax/src": "4.1.3",
 		"@types/node": "^25.9.1",
 		"builtin-modules": "^5.2.0",
 		"esbuild": "^0.28.0",
-		"obsidian": "^1.12.3",
+		"happy-dom": "^21.0.4",
+		"obsidian": "^1.14.4",
 		"typescript": "^6.0.3"
 	},
 	"dependencies": {
-		"@mathjax/mathjax-fira-font": "^4.1.2",
-		"@mathjax/mathjax-newcm-font": "^4.1.2",
-		"@mathjax/mathjax-pagella-font": "^4.1.2",
-		"@mathjax/mathjax-stix2-font": "^4.1.2",
-		"@mathjax/mathjax-tex-font": "^4.1.2",
-		"@mathjax/src": "^4.1.2"
+		"@mathjax/mathjax-fira-font": "4.1.3",
+		"@mathjax/mathjax-newcm-font": "4.1.3",
+		"@mathjax/mathjax-pagella-font": "4.1.3",
+		"@mathjax/mathjax-stix2-font": "4.1.3"
 	}
 }

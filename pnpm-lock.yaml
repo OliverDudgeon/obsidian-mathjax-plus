@@ -9,24 +9,24 @@ importers:
   .:
     dependencies:
       '@mathjax/mathjax-fira-font':
-        specifier: ^4.1.2
-        version: 4.1.2
+        specifier: 4.1.3
+        version: 4.1.3
       '@mathjax/mathjax-newcm-font':
-        specifier: ^4.1.2
-        version: 4.1.2
+        specifier: 4.1.3
+        version: 4.1.3
       '@mathjax/mathjax-pagella-font':
-        specifier: ^4.1.2
-        version: 4.1.2
+        specifier: 4.1.3
+        version: 4.1.3
       '@mathjax/mathjax-stix2-font':
-        specifier: ^4.1.2
-        version: 4.1.2
-      '@mathjax/mathjax-tex-font':
-        specifier: ^4.1.2
-        version: 4.1.2
-      '@mathjax/src':
-        specifier: ^4.1.2
-        version: 4.1.2
+        specifier: 4.1.3
+        version: 4.1.3
     devDependencies:
+      '@mathjax/mathjax-tex-font':
+        specifier: 4.1.3
+        version: 4.1.3
+      '@mathjax/src':
+        specifier: 4.1.3
+        version: 4.1.3
       '@types/node':
         specifier: ^25.9.1
         version: 25.9.1
@@ -36,20 +36,23 @@ importers:
       esbuild:
         specifier: ^0.28.0
         version: 0.28.0
+      happy-dom:
+        specifier: ^21.0.4
+        version: 21.0.4
       obsidian:
-        specifier: ^1.12.3
-        version: 1.12.3(@codemirror/state@6.5.0)(@codemirror/view@6.38.6)
+        specifier: ^1.14.4
+        version: 1.14.4(@codemirror/state@6.7.6)(@codemirror/view@6.43.13)
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
 
 packages:
 
-  '@codemirror/state@6.5.0':
-    resolution: {integrity: sha512-MwBHVK60IiIHDcoMet78lxt6iw5gJOGSbNbOIVBHWVXIH4/Nq1+GQgLLGgI1KlnN86WDXsPudVaqYHKBIx7Eyw==}
+  '@codemirror/state@6.7.6':
+    resolution: {integrity: sha512-kAz+AncRtKuIknedxT1bq4XwXv4UowhbkHU1myPrtVb/jZtImWuV5BXzv5vK6i3kYACsdiZiQKFQQ5Mq7elW8w==}
 
-  '@codemirror/view@6.38.6':
-    resolution: {integrity: sha512-qiS0z1bKs5WOvHIAC0Cybmv4AJSkAXgX5aD6Mqd2epSLlVJsQl8NG23jCVouIgkh4All/mrbdsf2UOLFnJw0tw==}
+  '@codemirror/view@6.43.13':
+    resolution: {integrity: sha512-sihaFrUzAsYBQsL9J2t69y8nfMQGwcYmggAZsk+kjPbjYZMyuf2hU8tUNTZ+P+isb6XRr8JE22TZlJxBoVdH1A==}
 
   '@esbuild/aix-ppc64@0.28.0':
     resolution: {integrity: sha512-lhRUCeuOyJQURhTxl4WkpFTjIsbDayJHih5kZC1giwE+MhIzAb7mEsQMqMf18rHLsrb5qI1tafG20mLxEWcWlA==}
@@ -210,23 +213,23 @@ packages:
   '@marijn/find-cluster-break@1.0.2':
     resolution: {integrity: sha512-l0h88YhZFyKdXIFNfSWpyjStDjGHwZ/U7iobcK1cQQD8sejsONdQtTVU+1wVN1PBw40PiiHB1vA5S7VTfQiP9g==}
 
-  '@mathjax/mathjax-fira-font@4.1.2':
-    resolution: {integrity: sha512-EgJzNpae2u9AVX9m6hxVPo52DPUw2waXXWnT/vG7pPhCpXZcYehTu4bDU3vl3Kn5B0ohuLeU4xCmJHEY7ftMDQ==}
+  '@mathjax/mathjax-fira-font@4.1.3':
+    resolution: {integrity: sha512-dv+CVEEWNMe15YOKz2hzRXVii1qa1I0Jldtk6JltxazLxT926+RtIcEoa4wCUEi4qiL3Po0JkOFjKiH23kwAOQ==}
 
-  '@mathjax/mathjax-newcm-font@4.1.2':
-    resolution: {integrity: sha512-lZHMjNP2XbABHA3kVn40rbse5ERUeMEmrGH03qLkCwxq4/5Z/eNLr0akw1MmQcqTwCbvkx1BFcmJ7RCfbRlw3Q==}
+  '@mathjax/mathjax-newcm-font@4.1.3':
+    resolution: {integrity: sha512-gzAB3dFHilHX1l5x2xUqRL+1jDQt3Fyza1DkEMVXWC4E8SvsGdlgEza47HYi2WhVcgfkvf4zgUGzuhbq3Pjlew==}
 
-  '@mathjax/mathjax-pagella-font@4.1.2':
-    resolution: {integrity: sha512-RVc1fKU34zkdmb7H2IZ6o3jtwkftQ2sBDRjK+d8d2zmZoodBdXNZ8zupZmjg8lZANu3xlpGTmoNvFS73TUWOBA==}
+  '@mathjax/mathjax-pagella-font@4.1.3':
+    resolution: {integrity: sha512-5wzdpobD8jmliHhVztSxUXrYNLBbO+11MDO0mGA4km/3Nn8ecX1/Ro872Y4QGPeCzLaKHcpHPvGpXGX9mtodIw==}
 
-  '@mathjax/mathjax-stix2-font@4.1.2':
-    resolution: {integrity: sha512-+KQlFrF87BELgXsgDS66OtJW+hgViW+NCpVeE0mwvaWbKzgrycxNeN9oGBXXdM6nel0DOJIleAAOPflhunxmsg==}
+  '@mathjax/mathjax-stix2-font@4.1.3':
+    resolution: {integrity: sha512-DjJh93JuKodoYmvWawiqa22y/dwP+hn6/DN/DepFRFaRbdndNcSD3iBsBunSrLPFIJBS83mn4iR015YRPWZWhg==}
 
-  '@mathjax/mathjax-tex-font@4.1.2':
-    resolution: {integrity: sha512-rcwIGf9OEJoC1E3SAATvcWAhYadDqsdqpTYjeTA8zfFWHsue386qgV4o7WAM9ZVOgGBrNC2Wy+tCr/Yw1Nz3jw==}
+  '@mathjax/mathjax-tex-font@4.1.3':
+    resolution: {integrity: sha512-9B78brBEmmAwyumaREIyM1gF2HgDamDIXA36UyeXWxX7XrpLdmoSB5NLIf/c6tEA4L6xNrIdMxfgY6YX/kcSNw==}
 
-  '@mathjax/src@4.1.2':
-    resolution: {integrity: sha512-7z3mQCQu4YqC1XyO4hMRkNTO49+5ZN8VtvBYKx+aGIXuGrlUvEAQZzeN/gf3tqZuVU4AI2yf1nYrrL1+BrSxIQ==}
+  '@mathjax/src@4.1.3':
+    resolution: {integrity: sha512-rIrWquuBSoJuoMBdC/1qD+AUHTorlccPicoVy6P2xbUgnuDBpCcpbHtOAsB8L3hdCHtNBg92lF8e3Fz+pkcQbw==}
 
   '@types/codemirror@5.60.8':
     resolution: {integrity: sha512-VjFgDF/eB+Aklcy15TtOTLQeMjTo07k7KAjql8OK5Dirr7a6sJY4T1uVBDuTVG9VEmn1uUsohOpYnVfgC6/jyw==}
@@ -240,9 +243,16 @@ packages:
   '@types/tern@0.23.9':
     resolution: {integrity: sha512-ypzHFE/wBzh+BlH6rrBgS5I/Z7RD21pGhZ2rltb/+ZrVM1awdZwjx7hE5XfuYgHWk9uvV5HLZN3SloevCAp3Bw==}
 
+  '@types/whatwg-mimetype@3.0.2':
+    resolution: {integrity: sha512-c2AKvDT8ToxLIOUlN51gTiHXflsfIFisS4pO7pDPoKouJCESkhZnEy623gwP9laCy5lnLDAw1vAzu2vM2YLOrA==}
+
+  '@types/ws@8.18.2':
+    resolution: {integrity: sha512-67MQl+fpWKVTT1NYdnmo3U4sc/xPo/zQBncVnI74qmQa0z/b+1g6iYqNmGCPbxO+zz2aklb08a0oHfegiVd0/w==}
+
   '@xmldom/xmldom@0.9.10':
     resolution: {integrity: sha512-A9gOqLdi6cV4ibazAjcQufGj0B1y/vDqYrcuP6d/6x8P27gRS8643Dj9o1dEKtB6O7fwxb2FgBmJS2mX7gpvdw==}
     engines: {node: '>=14.6'}
+    deprecated: this version has critical issues, please update to the latest version
 
   balanced-match@4.0.4:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
@@ -251,6 +261,10 @@ packages:
   brace-expansion@5.0.6:
     resolution: {integrity: sha512-kLpxurY4Z4r9sgMsyG0Z9uzsBlgiU/EFKhj/h91/8yHu0edo7XuixOIH3VcJ8kkxs6/jPzoI6U9Vj3WqbMQ94g==}
     engines: {node: 18 || 20 || >=22}
+
+  buffer-image-size@0.6.4:
+    resolution: {integrity: sha512-nEh+kZOPY1w+gcCMobZ6ETUp9WfibndnosbpwB1iJk/8Gt5ZF2bhS6+B6bPYz424KtwsR6Rflc3tCz1/ghX2dQ==}
+    engines: {node: '>=4.0'}
 
   builtin-modules@5.2.0:
     resolution: {integrity: sha512-02yxLeyxF4dNl6SlY6/5HfRSrSdZ/sCPoxy2kZNP5dZZX8LSAD9aE2gtJIUgWrsQTiMPl3mxESyrobSwvRGisQ==}
@@ -263,6 +277,10 @@ packages:
   crelt@1.0.6:
     resolution: {integrity: sha512-VQ2MBenTq1fWZUH9DJNGti7kKv6EeAuYr3cLwxUWhIu1baTaXh4Ib5W2CqHVqib4/MqbYGJqiL3Zb8GJZr3l4g==}
 
+  entities@7.0.1:
+    resolution: {integrity: sha512-TWrgLOFUQTH994YUyl1yT4uyavY5nNB5muff+RtWaqNVCAK408b5ZnnbNAUEWLTCpum9w6arT70i1XdQ4UeOPA==}
+    engines: {node: '>=0.12'}
+
   esbuild@0.28.0:
     resolution: {integrity: sha512-sNR9MHpXSUV/XB4zmsFKN+QgVG82Cc7+/aaxJ8Adi8hyOac+EXptIp45QBPaVyX3N70664wRbTcLTOemCAnyqw==}
     engines: {node: '>=18'}
@@ -271,6 +289,10 @@ packages:
   glob@13.0.6:
     resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
     engines: {node: 18 || 20 || >=22}
+
+  happy-dom@21.0.4:
+    resolution: {integrity: sha512-tFm+GaLBgo6o0awHnvHaNoraVo27qJ+2tZEtZ+cIa08hXbeitrxAJajLI05hsUy/2/YTKcUjQYzHe5mCcraLBw==}
+    engines: {node: '>=20.0.0'}
 
   lru-cache@11.5.1:
     resolution: {integrity: sha512-RPimw/7aMdv2oqRrxKwvZXcPfwBrn/JZ2xYcY9Hus/6LaS3VOAKVWKWgNLCFSiOm1ESXinjsDlidVU7JlnCN2A==}
@@ -290,14 +312,14 @@ packages:
   mj-context-menu@1.0.0:
     resolution: {integrity: sha512-OSgBFQRCVhrZwRa9lhqnKcJU92dd/YXgBjup0uyeuj9bOaVsf4myOyrjU4PfhYkdDk6AqVUTov7v5uFMvIbduA==}
 
-  moment@2.29.4:
-    resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
+  moment@2.31.0:
+    resolution: {integrity: sha512-0acOTfMiWOheYS4eoWb80yYMb/JLvVv9SHbs2PehaDzfUG0Bw855SKyk0IKTnPGa5+U2bmi3W68l1+sGLX/pvw==}
 
-  obsidian@1.12.3:
-    resolution: {integrity: sha512-HxWqe763dOqzXjnNiHmAJTRERN8KILBSqxDSEqbeSr7W8R8Jxezzbca+nz1LiiqXnMpM8lV2jzAezw3CZ4xNUw==}
+  obsidian@1.14.4:
+    resolution: {integrity: sha512-Kyo+5t0wFW2On5irLOPrgtwWDnaJsvE9n/P1OVvdPytx+NqeHJXvxVqADNOqLp9bU1+I64B6i+dHb0fxR/ss3w==}
     peerDependencies:
-      '@codemirror/state': 6.5.0
-      '@codemirror/view': 6.38.6
+      '@codemirror/state': 6.7.6
+      '@codemirror/view': 6.43.13
 
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
@@ -311,8 +333,8 @@ packages:
     engines: {node: 20 || >=22}
     hasBin: true
 
-  speech-rule-engine@5.0.0-rc.1:
-    resolution: {integrity: sha512-WgxL1K0MXNXW7+4fn11B6rtJ+jZTnCQMkJ44yV3XmFDcpGBqFJrDEHouGuFryqB5hoG1ksE2zlss/m6KOWnbPA==}
+  speech-rule-engine@5.0.0-rc.4:
+    resolution: {integrity: sha512-3dFcH2QtQNhtvUUc09TxoaEK4WG03B9Z57krFG9jocrKykKGu35BhIkWr0vgEAxZZomEWkeluff69y/EbYzP4Q==}
     hasBin: true
 
   style-mod@4.1.3:
@@ -329,18 +351,34 @@ packages:
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
 
+  whatwg-mimetype@3.0.0:
+    resolution: {integrity: sha512-nt+N2dzIutVRxARx1nghPKGv1xHikU7HKdfafKkLNLindmPU/ch3U31NOCGGA/dmPcmb1VlofO0vnKAcsm0o/Q==}
+    engines: {node: '>=12'}
+
   wicked-good-xpath@1.3.0:
     resolution: {integrity: sha512-Gd9+TUn5nXdwj/hFsPVx5cuHHiF5Bwuc30jZ4+ronF1qHK5O7HD0sgmXWSEgwKquT3ClLoKPVbO6qGwVwLzvAw==}
 
+  ws@8.22.1:
+    resolution: {integrity: sha512-oyL6OPYme/CmiFvNuGzeoxCJ4nOrZE2O1FwM9MWM1AsGri6nLXB2pg+lNA8aLeXMSav0J6eIVS1j6vUPzUtK9g==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
 snapshots:
 
-  '@codemirror/state@6.5.0':
+  '@codemirror/state@6.7.6':
     dependencies:
       '@marijn/find-cluster-break': 1.0.2
 
-  '@codemirror/view@6.38.6':
+  '@codemirror/view@6.43.13':
     dependencies:
-      '@codemirror/state': 6.5.0
+      '@codemirror/state': 6.7.6
       crelt: 1.0.6
       style-mod: 4.1.3
       w3c-keyname: 2.2.8
@@ -425,22 +463,22 @@ snapshots:
 
   '@marijn/find-cluster-break@1.0.2': {}
 
-  '@mathjax/mathjax-fira-font@4.1.2': {}
+  '@mathjax/mathjax-fira-font@4.1.3': {}
 
-  '@mathjax/mathjax-newcm-font@4.1.2': {}
+  '@mathjax/mathjax-newcm-font@4.1.3': {}
 
-  '@mathjax/mathjax-pagella-font@4.1.2': {}
+  '@mathjax/mathjax-pagella-font@4.1.3': {}
 
-  '@mathjax/mathjax-stix2-font@4.1.2': {}
+  '@mathjax/mathjax-stix2-font@4.1.3': {}
 
-  '@mathjax/mathjax-tex-font@4.1.2': {}
+  '@mathjax/mathjax-tex-font@4.1.3': {}
 
-  '@mathjax/src@4.1.2':
+  '@mathjax/src@4.1.3':
     dependencies:
-      '@mathjax/mathjax-newcm-font': 4.1.2
+      '@mathjax/mathjax-newcm-font': 4.1.3
       mhchemparser: 4.2.1
       mj-context-menu: 1.0.0
-      speech-rule-engine: 5.0.0-rc.1
+      speech-rule-engine: 5.0.0-rc.4
 
   '@types/codemirror@5.60.8':
     dependencies:
@@ -456,6 +494,12 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.9
 
+  '@types/whatwg-mimetype@3.0.2': {}
+
+  '@types/ws@8.18.2':
+    dependencies:
+      '@types/node': 25.9.1
+
   '@xmldom/xmldom@0.9.10': {}
 
   balanced-match@4.0.4: {}
@@ -464,11 +508,17 @@ snapshots:
     dependencies:
       balanced-match: 4.0.4
 
+  buffer-image-size@0.6.4:
+    dependencies:
+      '@types/node': 25.9.1
+
   builtin-modules@5.2.0: {}
 
   commander@14.0.3: {}
 
   crelt@1.0.6: {}
+
+  entities@7.0.1: {}
 
   esbuild@0.28.0:
     optionalDependencies:
@@ -505,6 +555,19 @@ snapshots:
       minipass: 7.1.3
       path-scurry: 2.0.2
 
+  happy-dom@21.0.4:
+    dependencies:
+      '@types/node': 25.9.1
+      '@types/whatwg-mimetype': 3.0.2
+      '@types/ws': 8.18.2
+      buffer-image-size: 0.6.4
+      entities: 7.0.1
+      whatwg-mimetype: 3.0.0
+      ws: 8.22.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
   lru-cache@11.5.1: {}
 
   mhchemparser@4.2.1: {}
@@ -519,14 +582,14 @@ snapshots:
     dependencies:
       rimraf: 6.1.3
 
-  moment@2.29.4: {}
+  moment@2.31.0: {}
 
-  obsidian@1.12.3(@codemirror/state@6.5.0)(@codemirror/view@6.38.6):
+  obsidian@1.14.4(@codemirror/state@6.7.6)(@codemirror/view@6.43.13):
     dependencies:
-      '@codemirror/state': 6.5.0
-      '@codemirror/view': 6.38.6
+      '@codemirror/state': 6.7.6
+      '@codemirror/view': 6.43.13
       '@types/codemirror': 5.60.8
-      moment: 2.29.4
+      moment: 2.31.0
 
   package-json-from-dist@1.0.1: {}
 
@@ -540,7 +603,7 @@ snapshots:
       glob: 13.0.6
       package-json-from-dist: 1.0.1
 
-  speech-rule-engine@5.0.0-rc.1:
+  speech-rule-engine@5.0.0-rc.4:
     dependencies:
       '@xmldom/xmldom': 0.9.10
       commander: 14.0.3
@@ -554,4 +617,8 @@ snapshots:
 
   w3c-keyname@2.2.8: {}
 
+  whatwg-mimetype@3.0.0: {}
+
   wicked-good-xpath@1.3.0: {}
+
+  ws@8.22.1: {}

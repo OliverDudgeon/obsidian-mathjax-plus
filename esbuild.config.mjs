@@ -1,5 +1,6 @@
 import esbuild from "esbuild";
 import builtins from "builtin-modules";
+import { nativeMathJaxPlugin } from "./scripts/native-mathjax-build.mjs";
 
 const watch = process.argv.includes("--watch");
 
@@ -9,7 +10,8 @@ const options = {
 	format: "cjs",
 	platform: "browser",
 	target: "es2020",
-	// woff2 fonts are inlined as base64 data URIs (via font-data.ts) so the plugin
+	plugins: [nativeMathJaxPlugin],
+	// woff2 fonts are inlined as base64 data URIs so the plugin
 	// ships as a single self-contained main.js — no external fonts/ folder.
 	loader: { ".woff2": "dataurl" },
 	// Obsidian provides these at runtime.
@@ -21,7 +23,7 @@ const options = {
 		"@lezer/common",
 		...builtins,
 	],
-	// MathJax v4 source is ESM; ensure esbuild picks the import condition.
+	// Font packages provide ESM data modules.
 	conditions: ["import", "module", "default"],
 	mainFields: ["module", "main"],
 	sourcemap: watch ? "inline" : false,
