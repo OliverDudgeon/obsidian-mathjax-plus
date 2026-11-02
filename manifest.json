@@ -1,0 +1,9 @@
+{
+	"id": "mathjax-plus",
+	"name": "MathJax Plus",
+	"version": "0.1.0",
+	"minAppVersion": "1.4.0",
+	"description": "Modern MathJax (v4) for Obsidian: line breaking, better fonts, and custom preamble macros.",
+	"author": "oliver",
+	"isDesktopOnly": true
+}

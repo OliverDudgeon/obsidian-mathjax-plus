@@ -1,0 +1,19 @@
+# Dependencies and package-manager cache
+node_modules/
+.pnpm-store/
+
+# Generated plugin bundle and TypeScript build cache
+/main.js
+/main.js.map
+*.tsbuildinfo
+
+# Local plugin settings and test-vault state (keep demo notes and preamble)
+/data.json
+/test-vault/.obsidian/
+
+# Logs, local environment files, and macOS metadata
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store

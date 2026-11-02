@@ -1,0 +1,5 @@
+# Only allow install/build scripts for explicitly trusted packages (supply-chain safety).
+onlyBuiltDependencies:
+  - esbuild
+allowBuilds:
+  esbuild: true

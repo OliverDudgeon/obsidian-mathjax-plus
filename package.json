@@ -1,0 +1,29 @@
+{
+	"name": "obsidian-mathjax-plus",
+	"version": "0.1.0",
+	"description": "Modern MathJax (v4) for Obsidian: line breaking, better fonts, and custom preamble macros.",
+	"private": true,
+	"packageManager": "pnpm@11.2.2",
+	"scripts": {
+		"build": "node esbuild.config.mjs",
+		"dev": "node esbuild.config.mjs --watch"
+	},
+	"keywords": [],
+	"author": "oliver",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^25.9.1",
+		"builtin-modules": "^5.2.0",
+		"esbuild": "^0.28.0",
+		"obsidian": "^1.12.3",
+		"typescript": "^6.0.3"
+	},
+	"dependencies": {
+		"@mathjax/mathjax-fira-font": "^4.1.2",
+		"@mathjax/mathjax-newcm-font": "^4.1.2",
+		"@mathjax/mathjax-pagella-font": "^4.1.2",
+		"@mathjax/mathjax-stix2-font": "^4.1.2",
+		"@mathjax/mathjax-tex-font": "^4.1.2",
+		"@mathjax/src": "^4.1.2"
+	}
+}
