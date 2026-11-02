@@ -135,3 +135,34 @@ test("plugin reloads edited and removed macros and cancels pending work on unloa
 		assert.equal(w.TestAPI.notices.length, 0);
 	} finally { await w.happyDOM.close(); }
 });
+
+test("native font glyph spacing survives settings changes with an open equation", async () => {
+	const w = await runtime();
+	try {
+		const { NativeMathJaxSession, DEFAULT_SETTINGS } = w.TestAPI;
+		const mj = w.MathJax;
+		// A note may already have been rendered before the plugin takes over.
+		mj.tex2chtml("x+y+z", { display: true });
+		const nativeStyle = mj.chtmlStylesheet();
+		w.document.head.append(nativeStyle);
+		const nativeFont = mj.startup.output.font;
+		const session = new NativeMathJaxSession(mj);
+		let previousStyle = nativeStyle;
+		for (const font of ["newcm", "obsidian", "tex", "stix2", "tex", "fira", "pagella", "obsidian", "obsidian"]) {
+			session.activate(await session.prepare({ ...DEFAULT_SETTINGS, font, displayAlign: "left" }, ""));
+			assert.notEqual(mj.startup.output.font, nativeFont, "each renderer owns its font CSS cache");
+			const equation = mj.tex2chtml("x+y+z", { display: true });
+			w.document.body.replaceChildren(equation);
+			const style = mj.chtmlStylesheet();
+			previousStyle?.remove();
+			w.document.head.append(style);
+			previousStyle = style;
+			const rules = Array.from(style.sheet.cssRules);
+			for (const glyph of equation.querySelectorAll("mjx-c")) {
+				const selector = `mjx-c.${glyph.className}`;
+				assert.ok(rules.some((rule) => rule.selectorText === selector && rule.style.padding),
+					`${font}: missing glyph spacing for ${glyph.textContent}; characters collapse to zero width`);
+			}
+		}
+	} finally { await w.happyDOM.close(); }
+});

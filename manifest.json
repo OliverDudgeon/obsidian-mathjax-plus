@@ -1,7 +1,7 @@
 {
 	"id": "mathjax-plus",
 	"name": "MathJax Plus",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"minAppVersion": "1.15.0",
 	"description": "Fonts, equation layout, and shared LaTeX preambles for Obsidian’s native MathJax renderer.",
 	"author": "oliver",

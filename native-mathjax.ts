@@ -1,6 +1,7 @@
 import type { CHTML } from "@mathjax/src/js/output/chtml.js";
 import type { TeX } from "@mathjax/src/js/input/tex.js";
 import type { HTMLDocument } from "@mathjax/src/js/handlers/html/HTMLDocument.js";
+import type { ChtmlFontDataClass } from "@mathjax/src/js/output/chtml/FontData.js";
 import type { MathJaxPlusSettings } from "./settings";
 
 type Output = CHTML<HTMLElement, Text, Document>;
@@ -83,10 +84,16 @@ export class NativeMathJaxSession {
 			...originalInput.options,
 		});
 		const originalOutput = this.original.output;
+		const nativeFontOptions = (originalOutput.font as unknown as {
+			options: Record<string, unknown>;
+		}).options;
 		const output = new this.mj._.output.chtml_ts.CHTML({
 			...originalOutput.options,
-			fontData: entry?.FontClass ?? originalOutput.font,
-			...(entry ? { fontURL: "mjxfonts" } : {}),
+			// Reusing a font instance also reuses its adaptive-CSS usage cache.
+			// A new stylesheet would then omit glyph spacing already emitted for
+			// the previous output, collapsing characters to zero width on reload.
+			fontData: entry?.FontClass ?? (originalOutput.font.constructor as ChtmlFontDataClass),
+			...(entry ? { fontURL: "mjxfonts" } : nativeFontOptions),
 			displayOverflow: settings.displayOverflow,
 			displayAlign: settings.displayAlign,
 			linebreaks: {
